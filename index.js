@@ -18,7 +18,8 @@ console.log(number)
 console.log(Number('200')+ 50)
 
 // Incremente o número 5 e retorne o seu valor incrementado
-console.log(5)
+let x2 = "5"
+console.log(x2++)
 // Como dividir o peso por 2? 
 let numero = '60';
 let unidade = 'kg';
