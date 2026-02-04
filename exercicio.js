@@ -1,11 +1,17 @@
 function verificarNivel() {
     const resposta = document.getElementById("resposta")
-    const nivelSelecionado = document.querySelector("input[name='nivel']:checked").value
+    const nivelSelecionado = document.querySelector("input[name='nivel']:checked")
 
     console.log(resposta)
     console.log(nivelSelecionado)
 
-    switch (nivelSelecionado) {
+    if (!nivelSelecionado) {
+        resposta.innerHTML = ("nivel é obrigatorio")
+    }
+
+    const nivel = nivelSelecionado.value
+
+    switch (nivel) {
     case "jr":
         resposta.innerHTML = ("és junior")
         break;
