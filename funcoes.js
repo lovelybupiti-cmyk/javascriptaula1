@@ -30,3 +30,4 @@ subtracao (5, 20)
 
 const cumprimentar = (nome) => console.log(`olá, ${nome}`);
 cumprimentar ("mario")
+
